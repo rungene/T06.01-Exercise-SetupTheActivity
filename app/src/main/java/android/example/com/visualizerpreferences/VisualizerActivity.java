@@ -17,6 +17,7 @@ package android.example.com.visualizerpreferences;
  */
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.example.com.visualizerpreferences.AudioVisuals.AudioInputReader;
 import android.example.com.visualizerpreferences.AudioVisuals.VisualizerView;
@@ -143,6 +144,8 @@ public class VisualizerActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id==R.id.action_settings) {
+            Intent startSettingsActivity = new Intent(this,SettingsActivity.class);
+            startActivity(startSettingsActivity);
 
 
         }
